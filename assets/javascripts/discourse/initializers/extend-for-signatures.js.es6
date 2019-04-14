@@ -13,7 +13,7 @@ function attachSignature(api, siteSettings) {
     const currentUser = api.getCurrentUser();
     if (currentUser) {
       const disabled = currentUser.get("custom_fields.disable_signatures");
-      unless (disabled) {
+      if (!disabled) {
         if (siteSettings.signatures_advanced_mode) {
           return [
             dec.h("hr"),
