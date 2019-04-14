@@ -1,10 +1,10 @@
 {{#if siteSettings.signatures_enabled}}
   <div class="control-group signatures">
-    <label class="control-label">Enable Signatures</label>
+    <label class="control-label">Disable Signatures</label>
     <div class="controls bio-composer input-xxlarge">
       <label class='checkbox-label'>
-        {{input type="checkbox" checked=model.custom_fields.see_signatures}}
-          See user signatures below posts
+        {{input type="checkbox" checked=model.custom_fields.disable_signatures}}
+          Disable user signatures below posts
       </label>
     </div>
   </div>
